@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pyo
+.keylog.txt
+keylog.txt
+*.log
