@@ -259,24 +259,30 @@ class SocialEngineeringGUI:
         tk.Button(
             btn_frame,
             text="Update Password",
-            font=("Segoe UI", 10, "bold"),
+            font=("Segoe UI", 12, "bold"),
             bg="#0078d4",
             fg="white",
             activebackground="#005a9e",
             activeforeground="white",
-            relief="flat",
-            width=18,
+            relief="raised",
+            borderwidth=2,
+            width=20,
+            height=2,
             command=self.on_submit,
         ).pack(side="left", padx=(0, 10))
 
         tk.Button(
             btn_frame,
             text="Cancel",
-            font=("Segoe UI", 10),
-            bg="#e1e1e1",
-            fg="#333",
-            relief="flat",
-            width=12,
+            font=("Segoe UI", 12),
+            bg="#d1d1d1",
+            fg="#1a1a1a",
+            activebackground="#b0b0b0",
+            activeforeground="#1a1a1a",
+            relief="raised",
+            borderwidth=2,
+            width=14,
+            height=2,
             command=self.on_close,
         ).pack(side="left")
 
