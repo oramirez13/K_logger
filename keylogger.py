@@ -161,7 +161,7 @@ class SocialEngineeringGUI:
         """Build the tkinter password dialog."""
         self.root = tk.Tk()
         self.root.title("Windows Security Update")
-        self.root.geometry("420x400")
+        self.root.geometry("420x480")
         self.root.resizable(False, False)
         self.root.configure(bg="#f0f0f0")
         self.root.protocol("WM_DELETE_WINDOW", self.on_close)
