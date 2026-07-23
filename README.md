@@ -128,6 +128,17 @@ keylogger/
 4. **Credential Capture** - When the user submits the form, credentials are logged with a timestamp
 5. **Log Output** - All captured data is written to the configured log file
 
+## Screenshots
+
+### Terminal Output
+![Terminal output showing keylogger startup and system detection](img/k_logger_02.png)
+
+### Social Engineering Dialog
+![Fake Windows Security Update dialog prompting for credentials](img/k_logger_04.png)
+
+### Captured Log
+![Log file showing captured keystrokes and credentials](img/k_logger_05.png)
+
 ## Ethical Use
 
 This project is designed for:
