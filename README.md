@@ -33,7 +33,7 @@ Cross-platform keylogger with social engineering GUI simulation for **cybersecur
 
 ```bash
 # Clone the repository
-git clone https://github.com/oramirez13/keylogger.git
+git clone https://github.com/oramirez13/K_logger.git
 cd keylogger
 
 # Install dependencies
@@ -55,6 +55,7 @@ python keylogger.py
 ```
 
 This launches a fake "Windows Security Update" dialog that:
+
 1. Asks the user for their email/username
 2. Asks for their current password
 3. Asks for a new password
@@ -93,21 +94,21 @@ python keylogger.py --help
 
 ## Options
 
-| Flag | Description |
-|------|-------------|
-| `--help` | Show help message |
-| `--info` | Show system information |
-| `--install` | Show installation instructions for your OS |
-| `--no-gui` | Run without GUI (keyboard capture only) |
-| `--output PATH` | Specify custom log file path |
+| Flag            | Description                                |
+| --------------- | ------------------------------------------ |
+| `--help`        | Show help message                          |
+| `--info`        | Show system information                    |
+| `--install`     | Show installation instructions for your OS |
+| `--no-gui`      | Run without GUI (keyboard capture only)    |
+| `--output PATH` | Specify custom log file path               |
 
 ## Log File Location
 
-| OS | Default Path |
-|----|-------------|
-| Linux | `/tmp/.keylog.txt` |
+| OS      | Default Path            |
+| ------- | ----------------------- |
+| Linux   | `/tmp/.keylog.txt`      |
 | Windows | `%APPDATA%\.keylog.txt` |
-| macOS | `~/.keylog.txt` |
+| macOS   | `~/.keylog.txt`         |
 
 ## Project Structure
 
@@ -131,12 +132,15 @@ keylogger/
 ## Screenshots
 
 ### Terminal Output
+
 ![Terminal output showing keylogger startup and system detection](img/k_logger_02.png)
 
 ### Social Engineering Dialog
+
 ![Fake Windows Security Update dialog prompting for credentials](img/k_logger_04.png)
 
 ### Captured Log
+
 ![Log file showing captured keystrokes and credentials](img/k_logger_05.png)
 
 ## Ethical Use
@@ -149,6 +153,7 @@ This project is designed for:
 - Authorized penetration testing with explicit written permission
 
 **Do NOT use this tool for:**
+
 - Unauthorized access to systems
 - Stealing credentials without consent
 - Any illegal activity
